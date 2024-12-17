@@ -1,0 +1,450 @@
+/* ===== GOOGLE FONTS ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-transition: 0.3s;
+    --main-color: #faeb89;  /*Logo Color For All Main*/
+    --description-color:#c7c7c7;  /* description Color*/
+    --main2-color:  #3C6A77;     /*#3346b5;*/
+}
+
+
+/* Start Global Rules */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    }
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* Container ----------------------------   */
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+
+
+/* End Global Rules */
+
+/*======================================================================================*/
+
+            /* /*=======     CLASS     ========           */
+
+            .section{
+                margin-top: 60px;
+            }
+            
+            .section-subtitle {        
+                text-align: center;
+                color: black;
+                font-weight: 600;
+                margin-top: 35px;
+                }
+            
+            .section-title {        
+                    text-align: center;
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: var(--main2-color);
+                    margin-bottom: 60px;
+                    }
+                    @media (max-width:700px) {
+                        .section-title {
+                            font-size: 32px;
+                            margin-bottom: 30px;
+                        }
+                    }
+
+
+
+                    .button {
+                        display: inline-block;
+                        background-color: var(--main2-color);
+                        color: #ffffff;
+                        padding: 0.75rem 1.4rem;
+                        border-radius: 0.5rem;
+                        transition: 0.3s;
+                        text-decoration: none;
+                        }
+                        .button:hover {
+                            background-color: #f6de64; 
+                            color: black;
+                        }
+
+
+
+                        .hr1 {
+                            background-color: var(--main2-color);
+                            margin-right: 100px;
+                            margin-left: 100px;
+                            height: 2.5px;
+                        }
+                        
+
+/*======================================================================================*/
+
+
+
+
+/* Start Header-Top */
+.header-top {
+    position: relative;
+    margin: 0 ;
+    border-bottom: 1px solid var(--main-color) ;
+    background-color: var(--main2-color);
+    
+}
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top .container a img {
+    width: 210px;
+    height: 120px;
+}
+.header-top .container form {
+    position: relative;
+}
+
+.header-top .container form .input {
+    padding: 15px 35px;
+    width: 450px;
+    background-color: white;
+    border-width: 0.5px;
+    color: #011932;
+    border: solid #011932 2px;
+    border-radius: 50px;
+    font-family: var(--heading-font);
+}
+
+.header-top .container form i {
+    position: absolute;
+    font-size: 20px;
+    color: #011932;
+    right: 15px;
+    top: 17px;
+}
+.header-top .container .infor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-top .container .infor a {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: var(--main-transition);
+}
+.header-top .container .infor i {
+    color: var(--main-color);
+    margin-right: 10px;
+}
+.header-top .container .social i:hover {
+    color:var(--main-color);
+}
+/* Start Responsive */
+@media (max-width: 1000px) {
+    .header-top .container .infor {
+        display: none;
+    }
+    .header-top .container form .input {
+        padding: 15px 35px;
+        width: 400px;
+    }
+    @media (max-width:767px) {
+        .header-top .container form  {
+            display: none;
+        }
+        .header-top .container  {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+/* تاني هيدر */
+/* Start Header-bottom */
+
+
+.show-menu {
+    display: flex !important;
+    flex-direction: column; /* عرض العناصر بشكل عمودي */
+    gap: 10px;
+    text-align: center; /* محاذاة العناصر في المنتصف */
+    position: absolute;
+    top: 70px; /* تعديل المسافة من الأعلى حسب الحاجة */
+    right: 0;
+    width: 60%; /* عرض القائمة */
+    background-color: var(--main2-color); /* لون خلفية القائمة */
+    border-radius: 0.8rem; /* جعل الزوايا دائرية */
+    padding: 10px;
+    z-index: 5;
+}
+
+
+.header-bottom {
+    position: sticky; 
+    top: 0; 
+    z-index: 10; 
+    padding-bottom: 10px;
+    background-color:var(--main2-color);
+
+}
+.header-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.header-bottom .container .select select {
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 1.5rem;
+}
+
+
+.header-bottom .container .select select:focus {
+    outline: none;
+}
+.header-bottom .container nav {
+    display: flex;
+    padding-top: 20px;
+}
+.header-bottom .container nav .toggle-menu {
+    font-size: 24px;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    position: relative;
+    transition: var(--main-transition);
+}
+.header-bottom .container nav ul {
+    display: flex;
+
+}
+.header-bottom .container nav ul a {
+    margin-left: 35px;
+    color: white;
+    transition: var(--main-transition);
+    font-size: 17px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.header-bottom .container nav ul a.active {
+    color: var(--main-color);
+}
+.header-bottom .container nav ul a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.header-bottom .container .icons {
+    display: flex;
+}
+.header-bottom .container .icons a {
+    margin-left: 25px;
+    font-size: 21px;
+    color: white;
+    position: relative;
+    transition: var(--main-transition);
+    padding-top: 15px;
+}
+.header-bottom .container .icons a:hover{
+    color: var(--main-color);
+}
+
+/* Start Responsive */
+@media (min-width: 767px) {
+    .header-bottom .container nav .toggle-menu {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .header-bottom .container nav .toggle-menu {
+        display: block;
+        color: white;
+    }
+    .header-bottom .container  {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header-bottom .container nav ul {
+        display: none;
+    }
+    
+    }
+
+/* End Header-bottom */
+
+
+
+
+
+/*======================================================================================*/
+
+
+
+
+
+/* Start Services */
+.services {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.services .text {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+    color: rgb(0, 0, 0);
+}
+.services .text h2 , span {
+    font-size: 50px;
+}
+.services .text h2 span {
+    color: var(--main2-color);
+    font-size: 50px;
+}
+.services .container .box-holder {
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    justify-content: center;
+}
+.services .container .box-holder .box {
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.30);
+        width: 300px;
+        height: 280px;
+        margin: 30px;
+        text-align: center;
+        transition: var(--main-transition);
+        -webkit-transition: var(--main-transition);
+        -moz-transition: var(--main-transition);
+        -ms-transition: var(--main-transition);
+        -o-transition: var(--main-transition);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        border-radius: 25px;
+}
+.services .container .box:hover {
+    background-color: var(--main2-color);
+    color: #ffffff;
+}
+.services .container .box img {
+    width: 100px;
+    padding: 20px;
+}
+.services .container .box h2 {
+    font-size: 20px;
+}
+.services .container .box p {
+    padding: 30px;
+}
+/* Start Responsive */
+@media (max-width: 768px) {
+    .services .container .box-holder {
+        flex-direction: column;
+    }
+    .services .container .box-holder .box {
+        width: 95%;
+        margin: auto;
+}
+}
+@media (max-width:768px) {
+    .services .container .box-holder {
+        display:grid ;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 15px;
+    }
+    .services .container .box-holder .box {
+        width: 150px;
+        height: 160px;
+        
+    }
+    .services .container .box img {
+        width: 50px;
+        padding: 10px;
+    }
+    .services .container .box h2 {
+        font-size: 13px;
+    }
+    .services .container .box p {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+@media (max-width:1000px) and (min-width:768px) {
+    .services .container .box-holder {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+
+    }
+    .services .container .box-holder .box {
+        width: 250px;
+        height: 260px;
+    }
+    .services .container .box img {
+        width: 50px;
+        padding: 10px;
+    }
+    .services .container .box h2 {
+        font-size: 22px;
+    }
+    .services .container .box p {
+        font-size: 18px;
+        padding: 25px;
+    }
+}
+/* End Responsive */
+/* End Services */
+
+
+
+
+
+/*======================================================================================*/
+
+
+
+
+
+
+
