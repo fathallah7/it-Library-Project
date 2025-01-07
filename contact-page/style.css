@@ -345,14 +345,6 @@ a {
 .uf-ct-01-text-primary{
     color: #3C6A77;
 }
-.uf-ct-01-btn-primary{
-    background-color: #3C6A77;
-    color: #fff;
-}
-.uf-ct-01-btn-primary:hover{
-    background-color: #000000;
-    color: #fff;
-}
 
 @keyframes uf-animation {
 0%   {top:0px;}
